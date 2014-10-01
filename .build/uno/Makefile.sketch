@@ -1,0 +1,14 @@
+
+
+
+
+
+.build/uno/src/demot.cpp : src/demot.ino
+	@mkdir -p .build/uno/src
+	@echo [93msrc/demot.ino[0m
+	@/usr/local/bin/ino preproc  -o $@ $^
+
+
+all : .build/uno/src/demot.cpp
+	@true
+
